@@ -53,3 +53,5 @@
 2017-05-06 8:26:59 - PHP Notice:  Use of undefined constant phone - assumed 'phone' in /var/www/html/upload/catalog/view/theme/default/template/common/header.tpl on line 144
 2017-05-06 8:28:44 - PHP Notice:  Undefined variable: tele in /var/www/html/upload/catalog/view/theme/default/template/common/header.tpl on line 144
 2017-05-06 8:28:44 - PHP Notice:  Use of undefined constant phone - assumed 'phone' in /var/www/html/upload/catalog/view/theme/default/template/common/header.tpl on line 144
+2017-05-06 9:32:35 - PHP Notice:  Undefined variable: tele in /var/www/html/upload/catalog/view/theme/default/template/common/header.tpl on line 144
+2017-05-06 9:32:35 - PHP Notice:  Use of undefined constant phone - assumed 'phone' in /var/www/html/upload/catalog/view/theme/default/template/common/header.tpl on line 144

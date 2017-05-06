@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <div class="container middle">
-  <div class="row">
+  <div style="margin-top: -20px">
     <?php echo $column_left; ?>
 
     <?php
@@ -23,7 +23,7 @@
     <?php
     } ?>
 
-    <div id="content " class="<?php echo $class; ?> ">
+    <div id="content">
       <?php echo $content_top; ?>
       <?php echo $content_bottom; ?>
     </div>

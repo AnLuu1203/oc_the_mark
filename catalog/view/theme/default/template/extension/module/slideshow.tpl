@@ -10,21 +10,18 @@
 
   <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="image/images/background.png" alt="Chania">
+    <?php
+    $num = 1;
+    foreach ($banners as $banner)
+    {
+    ?>
+      <div class="item <?php if ($num == 1) echo 'active'; ?>">
+        <img src="<?php echo $banner['image'] ?>" alt="Chania">
       </div>
 
-      <div class="item">
-        <img src="image/images/background.png" alt="Chania">
-      </div>
-
-      <div class="item">
-        <img src="image/images/background.png" alt="Flower">
-      </div>
-
-      <div class="item">
-        <img src="image/images/background.png" alt="Flower">
-      </div>
+    <?php
+    $num = $num+1;
+    }?>
     </div>
 
   <!-- Left and right controls -->

@@ -141,8 +141,6 @@
 
         <ul class="list-inline">
 
-          <!-- <li><a<!--  href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $tele -->phone; ?></span></li> -->
-
           <li class="dropdown">
             <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown" style="color: #FFF; text-shadow: 0 1px 0 #000; text-decoration: none; line-height: 32px;">
               <!-- <i class="fa fa-user"></i> -->
