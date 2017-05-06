@@ -1,21 +1,32 @@
 <?php if ($reviews) { ?>
 <?php foreach ($reviews as $review) { ?>
-<table class="table table-striped table-bordered">
-  <tr>
-    <td style="width: 50%;"><strong><?php echo $review['author']; ?></strong></td>
-    <td class="text-right"><?php echo $review['date_added']; ?></td>
-  </tr>
-  <tr>
-    <td colspan="2"><p><?php echo $review['text']; ?></p>
-      <?php for ($i = 1; $i <= 5; $i++) { ?>
-      <?php if ($review['rating'] < $i) { ?>
-      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
-      <?php } else { ?>
-      <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
-      <?php } ?>
-      <?php } ?></td>
-  </tr>
-</table>
+  <div class="comments">
+    <div class="row comment">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-1">
+        <div class="comment-avatar-holder"><img class="comment-avatar" src="https://dhqbrvplips7x.cloudfront.net/webchat/1.0.23/agent-e202505f.png"></div>
+      </div>
+      <div class="col-lg-7">
+        <p class="comment-name"><?php echo $review['author']; ?></p>
+        <div class="rate-holder">
+          <?php for ($i = 1; $i <= 5; $i++) { ?>
+            <?php if ($review['rating'] < $i) { ?>
+               <span>
+                <label class="rate-bullet rate-bullet-uncheck"></label>
+              </span>
+            <?php } else { ?>
+              <span>
+                <label class="rate-bullet rate-bullet-checked"></label>
+              </span>
+            <?php } ?>
+          <?php } ?>
+        </div>
+        <p class="comment-content"><?php echo $review['text']; ?></p>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+  </div>
+
 <?php } ?>
 <div class="text-right"><?php echo $pagination; ?></div>
 <?php } else { ?>

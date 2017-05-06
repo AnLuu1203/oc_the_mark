@@ -1,0 +1,5 @@
+2017-05-06 6:26:46 - PHP Notice:  Undefined variable: review in /var/www/html/upload/catalog/view/theme/default/template/product/product.tpl on line 191
+2017-05-06 6:40:32 - PHP Notice:  Undefined index: name in /var/www/html/upload/catalog/controller/product/product.php on line 605
+2017-05-06 6:40:32 - PHP Notice:  Undefined index: text in /var/www/html/upload/catalog/controller/product/product.php on line 609
+2017-05-06 6:41:01 - PHP Notice:  Undefined index: name in /var/www/html/upload/catalog/controller/product/product.php on line 605
+2017-05-06 6:41:01 - PHP Notice:  Undefined index: text in /var/www/html/upload/catalog/controller/product/product.php on line 609
