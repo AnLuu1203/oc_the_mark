@@ -60,6 +60,8 @@ class ControllerCommonHeader extends Controller {
 		$data['text_logged'] = sprintf($this->language->get('text_logged'), $this->url->link('account/account', '', true), $this->customer->getFirstName(), $this->url->link('account/logout', '', true));
 
 		$data['text_account'] = $this->language->get('text_account');
+		$data['text_account'] = 'Account';
+
 		$data['text_register'] = $this->language->get('text_register');
 		$data['text_login'] = $this->language->get('text_login');
 		$data['text_order'] = $this->language->get('text_order');
@@ -96,26 +98,28 @@ class ControllerCommonHeader extends Controller {
 
 		foreach ($categories as $category) {
 			if ($category['top']) {
+
 				// Level 2
 				$children_data = array();
 
 				$children = $this->model_catalog_category->getCategories($category['category_id']);
 
-				foreach ($children as $child) {
-					$filter_data = array(
-						'filter_category_id'  => $child['category_id'],
-						'filter_sub_category' => true
-					);
+				// foreach ($children as $child) {
+				// 	$filter_data = array(
+				// 		'filter_category_id'  => $child['category_id'],
+				// 		'filter_sub_category' => true
+				// 	);
 
-					$children_data[] = array(
-						'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
-						'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
-					);
-				}
+				// 	$children_data[] = array(
+				// 		'name'  => $child['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+				// 		'href'  => $this->url->link('product/category', 'path=' . $category['category_id'] . '_' . $child['category_id'])
+				// 	);
+				// }
 
 				// Level 1
 				$data['categories'][] = array(
 					'name'     => $category['name'],
+					'image'		 => $server . 'image/' . $category['image'],
 					'children' => $children_data,
 					'column'   => $category['column'] ? $category['column'] : 1,
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])

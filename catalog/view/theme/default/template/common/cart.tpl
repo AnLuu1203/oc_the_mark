@@ -1,6 +1,16 @@
-<div id="cart" class="btn-group btn-block">
-  <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle"><i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span></button>
-  <ul class="dropdown-menu pull-right">
+<div id="cart" class="btn-group btn-block" style="background-color: black; height: 32px; width: 90px; margin-top: 6px;" >
+
+  <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle" style="border: 2px solid #fff; padding: 5px 10px; border-radius: 20px; height: 32px; background-color: black; width: 100%;" >
+
+    <i class="fa fa-shopping-cart"></i>
+
+    <span id="cart-total"> <?php echo $text_items_des; ?></span>
+
+    <span id="cart-total" style="color: white; font-weight: bold; padding: 3px 8px 3px 8px; border-radius: 10px; background-color: #ffee2e;"> <?php echo $text_items_count; ?></span>
+
+  </button>
+
+  <ul class="dropdown-menu pull-right" style="position: absolute; width: 500px;">
     <?php if ($products || $vouchers) { ?>
     <li>
       <table class="table table-striped">
