@@ -20,6 +20,7 @@
         </div>
 
         <div class="col-lg-6">
+
           <div class="text-info">
 
             <h2 class="product-name"><?php echo $heading_title; ?></h2>
@@ -46,6 +47,15 @@
                 <input type=radio name="color" id="color-rose">
                 <label for="color-rose" class="background-rose"></label>
               </span>
+            </div>
+
+             <div class="add-to-bag" id="product">
+              <label class="control-label hidden" for="input-quantity"><?php echo $entry_qty; ?></label>
+              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control hidden" />
+              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
+              <br />
+
+              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn-submit">Add to Bag</button>
             </div>
 
             <div class="product-configuration">
@@ -138,15 +148,6 @@
                 <li>Tặng phiếu mua Phụ Kiện 400.000đ</li>
                 <li>Tặng phiếu mua phụ kiện 50.000đ – 10 triệu khi trả góp</li>
               </ul>
-            </div>
-
-            <div class="add-to-bag">
-              <label class="control-label hidden" for="input-quantity"><?php echo $entry_qty; ?></label>
-              <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control hidden" />
-              <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
-              <br />
-
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn-submit">Add to Bag</button>
             </div>
 
           </div>
