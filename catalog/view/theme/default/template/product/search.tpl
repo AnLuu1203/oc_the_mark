@@ -69,18 +69,20 @@
       <h2><?php echo $text_search; ?></h2>
       <?php if ($products) { ?>
       <div class="row">
+      <!--
         <div class="col-md-2 col-sm-6 hidden-xs">
           <div class="btn-group btn-group-sm">
             <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
             <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
           </div>
         </div>
+        -->
         <div class="col-md-3 col-sm-6">
           <div class="form-group">
             <a href="<?php echo $compare; ?>" id="compare-total" class="btn btn-link"><?php echo $text_compare; ?></a>
           </div>
         </div>
-        <div class="col-md-4 col-xs-6">
+        <div class="col-md-5 col-xs-6">
           <div class="form-group input-group input-group-sm">
             <label class="input-group-addon" for="input-sort"><?php echo $text_sort; ?></label>
             <select id="input-sort" class="form-control" onchange="location = this.value;">
@@ -94,7 +96,7 @@
             </select>
           </div>
         </div>
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-4 col-xs-6">
           <div class="form-group input-group input-group-sm">
             <label class="input-group-addon" for="input-limit"><?php echo $text_limit; ?></label>
             <select id="input-limit" class="form-control" onchange="location = this.value;">
