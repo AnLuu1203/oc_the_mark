@@ -6,7 +6,7 @@
 
     <span id="cart-total"> <?php echo $text_items_des; ?></span>
 
-    <span id="cart-total" style="color: white; font-weight: bold; padding: 3px 8px 3px 8px; border-radius: 10px; background-color: #ffee2e;"> <?php echo $text_items_count; ?></span>
+    <span id="cart-total" class="cart-item-total" style="color: white; font-weight: bold; padding: 3px 8px 3px 8px; border-radius: 10px; background-color: #ffee2e;"> <?php echo $text_items_count; ?></span>
 
   </button>
 
