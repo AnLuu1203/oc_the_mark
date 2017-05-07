@@ -11,6 +11,8 @@ class Log {
 	}
 
 	public function __destruct() {
-		fclose($this->handle);
+		if ($this->handle) {
+			fclose($this->handle);
+		}
 	}
 }
