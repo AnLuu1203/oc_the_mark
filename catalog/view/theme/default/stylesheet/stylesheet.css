@@ -1430,3 +1430,7 @@ section#slider .item img {
 section#slider {
     min-height: 500px;
 }
+
+.box-article ul li {
+    list-style: none;
+}
