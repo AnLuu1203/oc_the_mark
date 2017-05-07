@@ -57,7 +57,7 @@
 <?php } ?>
 </head>
 <body class="<?php echo $class; ?>">
-
+<header>
 <nav id="top" style="background-color: #000; height: 52px;">
   <div class="container">
     <!-- <?php echo $currency; ?>
@@ -172,3 +172,4 @@
     </div>
   </div>
 </nav>
+</header>
