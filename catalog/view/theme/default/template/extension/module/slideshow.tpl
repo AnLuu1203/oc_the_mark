@@ -17,10 +17,18 @@
     foreach ($banners as $banner)
     {
     ?>
-      <div class="item <?php if ($num == 1) echo 'active'; ?>">
-        <img src="<?php echo $banner['image'] ?>" alt="Chania">
-      </div>
+      
+        <div class="item <?php if ($num == 1) echo 'active'; ?>">
 
+          <?php if ($banner['link']) { ?>
+            <a href="<?php echo $banner['link']; ?>"><img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>" class="img-responsive" /></a>
+          <?php } else { ?>
+
+            <img src="<?php echo $banner['image'] ?>" alt="Chania">
+          <?php } ?>
+
+        </div>
+      
     <?php
     $num = $num+1;
     }?>
