@@ -55,7 +55,7 @@
               <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
               <br />
 
-              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn-submit">Add to Bag</button>
+              <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn-submit btn-add-bag">Add to Bag</button>
             </div>
 
             <div class="product-configuration">

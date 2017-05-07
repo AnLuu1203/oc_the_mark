@@ -1316,7 +1316,7 @@ section#slider .item img {
 .product ul {
     margin: 0;
     padding: 0;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 
 .product-detail {
@@ -1433,4 +1433,10 @@ section#slider {
 
 .box-article ul li {
     list-style: none;
+}
+
+.btn-add-bag {
+    background-color: #d97f00 !important;
+    color: white !important;
+    border: 1px solid #d97f00 !important;
 }
