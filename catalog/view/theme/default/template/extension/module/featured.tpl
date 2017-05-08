@@ -36,9 +36,8 @@
         </table>
 
         <button type="button" class="btn-more"><a href="<?php echo $product['href']; ?>">More Detail</a></button>
-        <!-- 
         <button type="button" class="btn-more" style="border-color:red; color:red;" onclick="cart.add('<?php echo $product['product_id']; ?>');" >Add To Bag</button>
-        -->
+
       </div>
     </li>
 

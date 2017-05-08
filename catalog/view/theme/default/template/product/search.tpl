@@ -113,7 +113,7 @@
       </div>
       <div class="row">
         <?php foreach ($products as $product) { ?>
-          <div class="product-detail col-lg-4 col-md-6 col-sm-6 col-xs-12">
+          <div class="product-detail col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="phone-image">
               <img src="<?php echo $product['thumb'] ?>" class="Apple-iPhone-5c-Blue">
             </div>
@@ -147,6 +147,7 @@
                 </tr>
               </table>
               <button type="button" class="btn-more"><a href="<?php echo $product['href']; ?>">More Detail</a></button>
+              <button type="button" class="btn-more" style="border-color:red; color:red;" onclick="cart.add('<?php echo $product['product_id']; ?>');" >Add To Bag</button>
             </div>
           </div>
         <?php } ?>
