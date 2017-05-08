@@ -189,7 +189,9 @@
         <div class="col-lg-2"></div>
       </div>
 
-      <div id="review"></div>
+      <div id="review">
+        
+      </div>
 
       <div class="row">
         <div class="col-lg-2"></div>

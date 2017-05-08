@@ -108,6 +108,24 @@
               <p class="phone-price"><?php echo $product['price']; ?></p>
               <table>
                 <tr>
+                  <td class="feature">Rating</td>
+                  <td class="feature-info">
+                    <div class="rate-holder">
+                      <?php for ($i = 1; $i <= 5; $i++) { ?>
+                        <?php if ($product['rating'] < $i) { ?>
+                          <span>
+                            <label class="rate-bullet rate-bullet-uncheck"></label>
+                          </span>
+                        <?php } else { ?>
+                          <span>
+                            <label class="rate-bullet rate-bullet-checked"></label>
+                          </span>
+                        <?php } ?>
+                      <?php } ?>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
                   <td class="feature">Screen</td>
                   <td class="feature-info"> LED-backlit IPS LCD, 4.7", HD</td>
                 </tr>

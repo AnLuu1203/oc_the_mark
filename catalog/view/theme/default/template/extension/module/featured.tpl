@@ -1,7 +1,7 @@
 <div class="row product">
 <ul>
   <?php foreach ($products as $product) { ?>
-    <li class="product-detail col-lg-4 col-md-4 col-sm-6 col-xs-12">
+    <li class="product-detail col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <div class="phone-image">
         <img src="<?php echo $product['thumb'] ?>" class="Apple-iPhone-5c-Blue">
       </div>
@@ -9,6 +9,25 @@
         <p class="phone-name"><?php echo $product['name']; ?></p>
         <p class="phone-price"><?php echo $product['price']; ?></p>
         <table>
+          <tr>
+            <td class="feature">Rating</td>
+            <td class="feature-info">
+              <div class="rate-holder">
+                <?php for ($i = 1; $i <= 5; $i++) { ?>
+                  <?php if ($product['rating'] < $i) { ?>
+                    <span>
+                      <label class="rate-bullet rate-bullet-uncheck"></label>
+                    </span>
+                  <?php } else { ?>
+                    <span>
+                      <label class="rate-bullet rate-bullet-checked"></label>
+                    </span>
+                  <?php } ?>
+                <?php } ?>
+              </div>
+            </td>
+          </tr>
+ 
           <tr>
             <td class="feature">Screen</td>
             <td class="feature-info"> LED-backlit IPS LCD, 4.7", HD</td>
